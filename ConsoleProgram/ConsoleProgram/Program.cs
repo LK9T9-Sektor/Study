@@ -25,6 +25,7 @@ namespace ConsoleProgram                    //пространство имен 
             Console.WriteLine("Введите метод. Для отображения списка методов введите: 0");
             //int selection = Convert.ToInt32(Console.ReadLine());
             string selection = Console.ReadLine();
+            Console.Clear();                // очистка консоли
             switch (selection)
             {
                 case "0":
