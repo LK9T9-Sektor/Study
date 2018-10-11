@@ -20,26 +20,29 @@ namespace ConsoleProgram                    //пространство имен 
                 "6. Операции присваивания\n" +
                 "7. Преобразование базовых типов + try/catch\n" +
                 "8. Условные выражения и логические операции\n" +
-                "9. Условные конструкции");
-        select:            
-            Console.WriteLine("Введите метод. Для отображения списка методов введите: 0");
+                "9. Условные конструкции\n" +
+                "10. Циклы for/do/while. Операторы continue/break");
+        select:
+            Console.WriteLine("_________________________________________________________________");
+            Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
             //int selection = Convert.ToInt32(Console.ReadLine());
             string selection = Console.ReadLine();
             Console.Clear();                // очистка консоли
             switch (selection)
             {
-                case "0":
+                case "?":
                     goto start;                                // переход к метке start:
+                case "0":
+                    Environment.Exit(0);                       // закрытие программы и передача кода 0
+                    break;
                 case "1":
                     Console.WriteLine("_______________Получение данных из Bunch.cs____________________");
                     //Bunch bunch = new Bunch();
                     Console.WriteLine(new Bunch().OfThings());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "2":
                     Console.WriteLine("_______________Получение данных из Neyavnaya.cs__________________");
                     Console.WriteLine(new Neyavnaya().Peremenaya());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "3":
                     Console.WriteLine("_______________Получение данных из Overflow.cs__________________");
@@ -48,7 +51,6 @@ namespace ConsoleProgram                    //пространство имен 
                     //int meth_2 = Overflow();
                     //Console.WriteLine($"Из метода №2: {Overflow()}");
                     //Console.WriteLine(meth_2);
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "4":
                     Console.WriteLine("_______________Получение данных из Convertator.cs_______________");
@@ -58,32 +60,30 @@ namespace ConsoleProgram                    //пространство имен 
                     //int z1;                                  // переменная для получения результата
                     //z1 = Convertator.Chisla();               // переданное значение присваиваем в переменнуюю z
                     //Console.WriteLine(z1.GetType());         // получение типа переменной
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "5":
                     Console.WriteLine("_______________Получение данных из PoRazryad.cs__________________");
                     Console.WriteLine(new PoRazryad().Action());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "6":
                     Console.WriteLine("_______________Получение данных из Prisvaivanie.cs_______________");
                     Console.WriteLine(new Prisvaivanie().Action());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "7":
                     Console.WriteLine("_______________Получение данных из Preobrazovanie.cs_____________");
                     Console.WriteLine(new Preobrazovanie().Action());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "8":
                     Console.WriteLine("_______________Получение данных из Uslovnie.cs___________________");
                     Console.WriteLine(new Uslovnie().Action());
-                    Console.WriteLine("_________________________________________________________________");
                     goto select;
                 case "9":
                     Console.WriteLine("_______________Получение данных из Construkcii.cs________________");
                     Console.WriteLine(new Construkcii().Action());
-                    Console.WriteLine("_________________________________________________________________");
+                    goto select;
+                case "10":
+                    Console.WriteLine("_______________Получение данных из Cycles.cs_____________________");
+                    Console.WriteLine(new Cycles().Action());
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");

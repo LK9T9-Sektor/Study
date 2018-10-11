@@ -46,6 +46,7 @@
     <Compile Include="Bunch.cs" />
     <Compile Include="Construkcii.cs" />
     <Compile Include="Convertator.cs" />
+    <Compile Include="Cycles.cs" />
     <Compile Include="Neyavnaya.cs" />
     <Compile Include="Overflow.cs" />
     <Compile Include="PoRazryad.cs" />
