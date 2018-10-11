@@ -10,7 +10,7 @@ namespace ConsoleProgram                    //пространство имен 
     {
         static void Main(string[] args)     // точка входа, метод Main, static - статистический, void - ничего не возвращает (метод №0)
         {                                   // блок операторов {}
-        start:                              // метка start:            
+        start:                              // метка start:
             Console.WriteLine("\t\t\tВыберите метод: \n" +
                 "1. Получение данных из кучи различных функций\n" +
                 "2. Неявная типизация, получение типа переменной\n" +
@@ -21,7 +21,8 @@ namespace ConsoleProgram                    //пространство имен 
                 "7. Преобразование базовых типов + try/catch\n" +
                 "8. Условные выражения и логические операции\n" +
                 "9. Условные конструкции\n" +
-                "10. Циклы for/do/while. Операторы continue/break");
+                "10. Циклы for/do/while. Операторы continue/break\n" +
+                "11. ");
         select:
             Console.WriteLine("_________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -85,6 +86,10 @@ namespace ConsoleProgram                    //пространство имен 
                     Console.WriteLine("_______________Получение данных из Cycles.cs_____________________");
                     Console.WriteLine(new Cycles().Action());
                     goto select;
+                case "11":
+                    Console.WriteLine("_______________Получение данных из Cycles.cs_____________________");
+                    Console.WriteLine(new Cycles().Action());
+                    goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
                     goto select;
@@ -101,7 +106,7 @@ namespace ConsoleProgram                    //пространство имен 
 
         public void All()
         {
-            Console.WriteLine(First());     // краткая запись
+            Console.WriteLine(First());     // краткая запись вызова из метода
             Console.ReadKey();              // чтобы консоль не сразу закрывалась
         }
     }
