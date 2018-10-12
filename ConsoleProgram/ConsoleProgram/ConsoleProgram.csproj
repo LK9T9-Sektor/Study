@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Array.cs" />
     <Compile Include="Bunch.cs" />
     <Compile Include="Construkcii.cs" />
     <Compile Include="Convertator.cs" />

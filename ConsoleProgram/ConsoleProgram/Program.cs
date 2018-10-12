@@ -22,7 +22,7 @@ namespace ConsoleProgram                    //пространство имен 
                 "8. Условные выражения и логические операции\n" +
                 "9. Условные конструкции\n" +
                 "10. Циклы for/do/while. Операторы continue/break\n" +
-                "11. ");
+                "11. Массивы, цикл foreach, операторы Length, GetUpperBound");
         select:
             Console.WriteLine("_________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -87,8 +87,8 @@ namespace ConsoleProgram                    //пространство имен 
                     Console.WriteLine(new Cycles().Action());
                     goto select;
                 case "11":
-                    Console.WriteLine("_______________Получение данных из Cycles.cs_____________________");
-                    Console.WriteLine(new Cycles().Action());
+                    Console.WriteLine("_______________Получение данных из Array.cs______________________");
+                    Console.WriteLine(new Array().Action());
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
