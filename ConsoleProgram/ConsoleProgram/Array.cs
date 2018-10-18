@@ -79,7 +79,7 @@ namespace ConsoleProgram
             /* b - кол-во эл-ов 1 ранга; c - кол-во эл-ов 2 ранга;
              * d - счётчик по b-строкам; e - счётчик по c-столбцам)
             */
-            Console.Write("Введите кол-во строк): ");
+            Console.Write("Введите кол-во строк: ");
             int b = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите кол-во столбцов: ");
             int c = Convert.ToInt32(Console.ReadLine());
@@ -123,7 +123,6 @@ namespace ConsoleProgram
                 }
                 Console.WriteLine("");                      // вывод элементов
             }
-
             return 0;
         }
     }

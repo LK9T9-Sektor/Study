@@ -51,6 +51,7 @@
     <Compile Include="Methods.cs" />
     <Compile Include="Neyavnaya.cs" />
     <Compile Include="Overflow.cs" />
+    <Compile Include="Parameters.cs" />
     <Compile Include="PoRazryad.cs" />
     <Compile Include="Preobrazovanie.cs" />
     <Compile Include="Prisvaivanie.cs" />
