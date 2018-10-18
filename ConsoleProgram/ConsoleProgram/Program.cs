@@ -97,26 +97,25 @@ namespace ConsoleProgram                    //пространство имен 
                     Console.WriteLine(new Array().Action());
                     goto select;
                 case "12":
-                    Console.WriteLine("_________________________________________________________________");
-                    Method0_1();
+                    Console.WriteLine("_____________________Внутренний метод 12_________________________");
+                    Method12();
                     //Console.WriteLine(new Array().Action());
                     goto select;
                  case "13":
-                    Console.WriteLine("_________________________________________________________________");
-                    Method0_2();
+                    Console.WriteLine("_____________________Внутренний метод 13_________________________");
+                    Method13();
                     goto select;
                  case "14":
-                    Console.WriteLine("_________________________________________________________________");
-                    Method0_3();
+                    Console.WriteLine("_____________________Внутренний метод 14_________________________");
+                    Method14();
                     goto select;
                   case "15":
-                    Console.WriteLine("_________________________________________________________________");
-                    Method0_4();
+                    Console.WriteLine("_____________________Внутренний метод 15_________________________");
+                    Method15();
                     goto select;
                   case "16":
-                    Console.WriteLine("_________________________________________________________________");
-                    Parameters parameters = new Parameters();
-                    //Console.WriteLine(new Parameters().Addition());
+                    Console.WriteLine("_____________________Внутренний метод 16_________________________");
+                    Method16();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
@@ -124,16 +123,16 @@ namespace ConsoleProgram                    //пространство имен 
             }
         }
 
-        static void Method0_1()             // 12
+        static void Method12()             // используется для вызова методов внутри
         {
             Console.WriteLine("Возвращение значения из метода");
-            int mthd = Method1();
-            Console.WriteLine(Method1());
-            Method2();
-            Console.WriteLine(Method3());
+            int mthd = Give_a();
+            Console.WriteLine(Give_a());
+            Small();
+            Console.WriteLine(SmallRet());
         }
         
-        static void Method0_2()             // 13
+        static void Method13()             // используется для вызова методов внутри
         {
             Console.Write("Введите a: ");
             int a = Convert.ToInt32(Console.ReadLine());
@@ -166,7 +165,7 @@ namespace ConsoleProgram                    //пространство имен 
             Console.WriteLine("6 - 5 * 3 + 5 = {0}", abd);
         }
         
-        static void Method0_3()             // 14
+        static void Method14()             // используется для вызова методов внутри
         {
             Console.WriteLine("\tx = x + y \tили \t(x = z + d)");
             int z = 5;
@@ -184,7 +183,7 @@ namespace ConsoleProgram                    //пространство имен 
             Console.WriteLine($"Конечное значение d = {d} \t (y)");
         }
 
-        static void Method0_4()             // 15
+        static void Method15()             // используется для вызова методов внутри
         {
             Console.WriteLine("\t\tРасчёт площади и периметра прямоугольника");
             Console.Write("Введите ширину: ");
@@ -198,52 +197,95 @@ namespace ConsoleProgram                    //пространство имен 
             Console.WriteLine($"Периметр = {perimeter}");
         }
 
-        static int Method1()            // метод 1
+        static int Give_a()             // относится к 12 методу
         {
             int a = 12;
             return a;                   // return - возвращает значение и выходит из метода, всё что будет ниже не сработает!
         }
 
-        static void Method2() => Console.WriteLine("Сокращенная запись метода");
+        static void Small() => Console.WriteLine("Сокращенная запись метода");
 
-        static string Method3 () => "Возвращение значения (return) в сокращенной записи метода";    // return "текст";
-
+        static string SmallRet() => "Возвращение значения (return) в сокращенной записи метода";    // return "текст";
+        // 13
         static int Sum(int x, int y)
         {
             return x + y;
         }
         // через данный метод можно отображать string и int, т.е. замена постоянному написанию Console.WriteLine
-        static void Display(string name, int age)
+        static void Display(string name, int age)   // 13
         {
             Console.WriteLine($"Name: {name}  Age: {age}");
         }
-
+        // 13
         static int OptionalParams(int a1, int b1, int c1 = 3, int d1 = 10)
         {
             return a1 - b1 * c1 + d1;
         }
-
+        // 14
         static void AdditionalVal(int x, int y)         // передача по значению
         {
             x = x + y;
             Console.WriteLine($"Результат суммы,  x = {x}  \t (x + y)");
         }
-
+        // 14
         static void AdditionalRef(ref int x, int y)     // передача по ссылке (ref)
         {
             x = x + y;
             Console.WriteLine($"Результат суммы,  x = {x}  \t (x + y)");
         }
-        
+        // 15
         static void PerimArea(int width, int height, out int area, out int perimeter)     // out
         {
             perimeter = (width + height) * 2;
             area = width * height;
         }
 
+        static void Method16()          // используется для вызова методов внутри и из Parameters.cs
+        {
+            Console.WriteLine("\tПередача и получение внутри Program.cs");
+            // передача через params
+            Console.WriteLine("Передача params");
+            Addition(new int[] { 1, 2, 3, 4 });
+            Addition(2, 3, 4, 5);
+            Addition();
+            // передача массива, 1 способ
+            Console.WriteLine("Передача массива");
+            AdditionMass(new int[] { 1, 2, 3, 4 });
+            AdditionMass(new int[] { 2, 3, 4, 5 });
+            AdditionMass(new int[] { });
+            // 2 способ
+            int[] array = new int[] { 1, 2, 3, 4 };
+            AdditionMass(array);
+            //int[] array = new int[] { 3, 3, 3, 3 };
+            //AdditionMass(array);
+            Console.WriteLine("\tПередача и получение из Parameters.cs");
+            new Parameters().Addition(1, 2, 3, 4);
+        }
+        // 16
+        static void Addition(params int[] numbers)
+        {
+            int result = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result += numbers[i];
+            }
+            Console.WriteLine(result);
+        }
+        // 16
+        static void AdditionMass(int[] numbers)
+        {
+            int result = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                result += numbers[i];
+            }
+            Console.WriteLine(result);
+        }
+
+        
         public void All()
         {
-            Console.WriteLine(Method1());       // краткая запись вызова из метода
+            Console.WriteLine();
             Console.ReadKey();                  // чтобы консоль не сразу закрывалась
         }
     }
