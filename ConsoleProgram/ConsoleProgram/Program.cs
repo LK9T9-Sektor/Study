@@ -28,7 +28,10 @@ namespace ConsoleProgram                    //пространство имен 
                 "13. Параметры методов. Необязательные и именованные параметры\n" +
                 "14. Передача входных параметров по значению и ссылке (ref)\n" +
                 "15. Выходные параметры (out)\n" +
-                "16. Ключевое слово params. Массив параметров\n");
+                "16. Ключевое слово params. Массив параметров\n" +
+                "17. Область видимости (контекст) переменных\n" +
+                "18. Рекурсивные функции\n" +
+                "19. Перечисления enum\n");
         select:
             Console.WriteLine("_________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -101,21 +104,33 @@ namespace ConsoleProgram                    //пространство имен 
                     Method12();
                     //Console.WriteLine(new Array().Action());
                     goto select;
-                 case "13":
+                case "13":
                     Console.WriteLine("_____________________Внутренний метод 13_________________________");
                     Method13();
                     goto select;
-                 case "14":
+                case "14":
                     Console.WriteLine("_____________________Внутренний метод 14_________________________");
                     Method14();
                     goto select;
-                  case "15":
+                case "15":
                     Console.WriteLine("_____________________Внутренний метод 15_________________________");
                     Method15();
                     goto select;
-                  case "16":
+                case "16":
                     Console.WriteLine("_____________________Внутренний метод 16_________________________");
                     Method16();
+                    goto select;
+                case "17":
+                    Console.WriteLine("_______________Получение данных из Context.cs_____________________");
+                    new Context().Show();
+                    goto select;
+                case "18":
+                    Console.WriteLine("______________Получение данных из Recursion.cs_____________________");
+                    new Recursion().Action();
+                    goto select;
+                case "19":
+                    Console.WriteLine("______________Получение данных из Enumerable.cs____________________");
+                    new Enumerable().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");

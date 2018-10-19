@@ -98,7 +98,7 @@ namespace ConsoleProgram
                 {
                     for (int e = 0; e < c; ++e)
                     {
-                        array[d, e] = r.Next(f, g); // Случаыйне числа от f до g
+                        array[d, e] = r.Next(f, g); // Случайные числа от f до g
                     }
                 }
             }
