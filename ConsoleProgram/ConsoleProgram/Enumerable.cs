@@ -12,7 +12,7 @@ namespace ConsoleProgram
         {
             Понедельник,    // 0
             Вторник,        // 1
-            Среда,
+            Среда,          // 2
             Четверг,
             Пятница,
             Суббота,
@@ -43,11 +43,17 @@ namespace ConsoleProgram
             day = Days.Среда;
             Console.WriteLine(day);         // выводит имя константы, не значение!
             Console.WriteLine((int)day);    // выведет значение константы
+            MathOp();
+        }
+
+        // ввод чисел и выбор операции
+        public void MathOp()
+        {
             Console.Write("Введите x: ");
             double x = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите y: ");
             double y = Convert.ToDouble(Console.ReadLine());
-            start:
+        start:
             Console.Write("Введите операцию (+ , - , * , / ): ");
             string op = Console.ReadLine();
             switch (op)
@@ -70,6 +76,7 @@ namespace ConsoleProgram
             }
         }
 
+        // подсчет и вывод результата
         static void ApplyOperation(double x, double y, Operation op)
         {
             double result = 0.0;

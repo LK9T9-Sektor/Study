@@ -1,17 +1,24 @@
-﻿using System;                               //namespace, пространства имен, из библиотек находящихся по адресу: C:\Windows\assembly
+﻿//namespace, пространства имен, из библиотек находящихся по адресу: C:\Windows\assembly
+using System;                               
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleProgram                    //пространство имен ConsoleApp3
+//пространство имен ConsoleProgram
+namespace ConsoleProgram                    
 {
-    class Program                           // класс Program в namespace ConsoleApp3 (ConsoleApp3.Program)
+    // класс Program в namespace ConsoleProgram (ConsoleProgram.Program)
+    class Program                           
     {
-        static void Main(string[] args)     // точка входа, метод Main, static - статистический, void - ничего не возвращает (метод №0)
-        {                                   // блок операторов {}
-            Console.Title = "Обучение";     // заголовок программы
-        start:                              // метка start:
+        // точка входа, метод Main, static - статистический, void - ничего не возвращает (метод №0)
+        static void Main(string[] args)
+        // блок операторов {}
+        {
+            // заголовок программы
+            Console.Title = "Обучение C#";
+        // метка start:
+        start:                              
             Console.WriteLine("\t\t\tВыберите метод: \n" +
                 "1. Получение данных из кучи различных функций\n" +
                 "2. Неявная типизация, получение типа переменной\n" +
@@ -37,13 +44,16 @@ namespace ConsoleProgram                    //пространство имен 
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
             //int selection = Convert.ToInt32(Console.ReadLine());
             string selection = Console.ReadLine();
-            Console.Clear();                // очистка консоли
+            // очистка консоли
+            Console.Clear();
             switch (selection)
             {
                 case "?":
-                    goto start;                                // переход к метке start:
+                    // переход к метке start:
+                    goto start;                  
                 case "0":
-                    Environment.Exit(0);                       // закрытие программы и передача кода 0
+                    // закрытие программы и передача кода 0
+                    Environment.Exit(0);     
                     break;
                 case "1":
                     Console.WriteLine("_______________Получение данных из Bunch.cs_____________________");
