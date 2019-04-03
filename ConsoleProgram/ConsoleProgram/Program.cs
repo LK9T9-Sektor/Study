@@ -38,7 +38,9 @@ namespace ConsoleProgram
                 "16. Ключевое слово params. Массив параметров\n" +
                 "17. Область видимости (контекст) переменных\n" +
                 "18. Рекурсивные функции\n" +
-                "19. Перечисления enum\n");
+                "19. Перечисления enum\n" +
+                "20. Кортежи\n" +
+                "21. ООП: классы, объекты, this, конструкторы, инициализаторы объектов");
         select:
             Console.WriteLine("_________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -142,12 +144,21 @@ namespace ConsoleProgram
                     Console.WriteLine("______________Получение данных из Enumerable.cs____________________");
                     new Enumerable().Action();
                     goto select;
+                case "20":
+                    Console.WriteLine("______________Получение данных из Tuples.cs_________________________");
+                    new Tuples().Action();
+                    goto select;
+                case "21":
+                    Console.WriteLine("______________Получение данных из Oop_classes_objects.cs_____________");
+                    new Oop_classes_objects().Action();
+                    goto select;                    
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
                     goto select;
             }
-        }
 
+        }
+        
         static void Method12()             // используется для вызова методов внутри
         {
             Console.WriteLine("Возвращение значения из метода");
