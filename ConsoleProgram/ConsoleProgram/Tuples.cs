@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace ConsoleProgram
 {
     /* кортежи комбинируют объекты различных типов
-    p.s. для работы кортежей, необходимо установить "System.ValueTuple -Version 4.5.0" через NuGet Package Manager 
-    p.s.s кортежи не поддерживают некоторые ООП, связанные с наследованием!
+    * p.s. для работы кортежей, необходимо установить "System.ValueTuple -Version 4.5.0" через NuGet Package Manager
+    * p.s.s кортежи не поддерживают некоторые ООП, связанные с наследованием!
     */
     class Tuples
     {

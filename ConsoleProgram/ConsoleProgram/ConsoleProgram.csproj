@@ -64,7 +64,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion.cs" />
+    <Compile Include="Structures.cs" />
     <Compile Include="Tuples.cs" />
+    <Compile Include="Types.cs" />
     <Compile Include="Uslovnie.cs" />
   </ItemGroup>
   <ItemGroup>

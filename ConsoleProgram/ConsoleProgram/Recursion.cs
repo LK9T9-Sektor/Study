@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 18. Рекурсивные функции (Факториал, число Фибоначи)
     class Recursion
     {
         public void Action()
         {
             Console.Write("Введите число: ");
             int x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Факториал: ");
             Console.WriteLine(Factorial(x));
+            Console.Write("Числов Фибоначи: ");
             Console.WriteLine(Fibonachi(x));
         }
-
+        // Факториал
         static int Factorial (int x)
         {
             if (x == 0)
@@ -28,7 +31,7 @@ namespace ConsoleProgram
             }
 
         }
-
+        // Число Фибоначи
         static int Fibonachi (int x)
         {
             if (x == 0)
