@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 17. Область видимости (контекст) переменных
     class Context   // начало контекста класса
     {
         static int a = 9; // переменная уровня класса, глобальная переменная

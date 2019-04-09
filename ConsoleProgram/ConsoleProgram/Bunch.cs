@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 // Куча различных функций
 namespace ConsoleProgram
 {
+    // 1. Получение данных из кучи различных функций
     class Bunch
     {
         public int OfThings ()

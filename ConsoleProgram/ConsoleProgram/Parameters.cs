@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class Parameters            // 16. Массив в качестве параметра
+    // 16. Массив в качестве параметра
+    class Parameters
     {
         public void Addition(params int[] numbers)
         {

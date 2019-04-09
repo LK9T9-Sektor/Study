@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class Uslovnie
+    // 8. Условные выражения и логические операции
+    class Conditional
     {
-        public int Action()       // метод 8
+        public int Action()
         {
             Console.WriteLine("\t Операции сравнения и Логические операции (bool)");
             int a = 10;

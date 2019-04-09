@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class Prisvaivanie
+    // 6. Операции присваивания
+    class Assignment
     {
-        public int Action()     // метод 6
+        public int Action()
         {
             Console.WriteLine("\t Операции присваивания: ");
             int a = 10;

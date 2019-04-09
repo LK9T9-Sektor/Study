@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 19. Перечисления enum
     class Enumerable
     {
         enum Days           // int, по умолчанию

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 12 - 16
     class Methods
     {
         // 12. Методы

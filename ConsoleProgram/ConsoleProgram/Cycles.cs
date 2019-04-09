@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 10. Циклы for/do/while. Операторы continue/break
     class Cycles
     {
         public int Action()

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 4. Конвертация чисел из 10-ой системы счисления в 2, 8, 10, 16
     class Convertator
     {
-        public int Chisla()    // здесь хранится переведенное число
+        public int Numbers()    // здесь хранится переведенное число
         {
             Console.Write("Введите число в 10-й системе: ");
             int c1 = Convert.ToInt32(Console.ReadLine());

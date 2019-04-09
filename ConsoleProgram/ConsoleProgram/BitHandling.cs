@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class PoRazryad
+    // 5. Поразрядные операции (bit handling, bit manipulation)
+    class BitHandling
     {
         public int Action()
         {

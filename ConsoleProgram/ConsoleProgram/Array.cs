@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 11. Массивы, цикл foreach, операторы Length, GetUpperBound\
     class Array
     {
         public int Action()

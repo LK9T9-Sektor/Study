@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class Preobrazovanie
+    // 7. Преобразование базовых типов + try/catch
+    class Conversion
     {
-        public int Action()     // метод 7
+        public int Action()
         {
             Console.WriteLine("\t Преобразования типов данных: ");
             byte a = 4;

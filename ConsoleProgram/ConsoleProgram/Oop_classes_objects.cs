@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    // ООП, классы, this, конструкторы, инициализаторы объектов
+    // 21. ООП, классы, this, конструкторы, инициализаторы объектов
     class Oop_classes_objects
     {
         public void Action()

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
-    class Neyavnaya
+    // 2. Неявная типизация, получение типа переменной
+    class Implicit
     {
-        public int Peremenaya()
+        public int Variable()
         {
             Console.Write("Введите число d: ");
             var d = Console.ReadLine();

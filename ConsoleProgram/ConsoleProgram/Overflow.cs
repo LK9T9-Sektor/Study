@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleProgram
 {
+    // 3. Получение данных о переполнении переменной
     class Overflow
     {
         public int Action()                              // метод 2, целочисленное переполнение
