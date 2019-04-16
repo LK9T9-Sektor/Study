@@ -96,7 +96,7 @@ namespace ConsoleProgram
 
                         // Далее не обязательно
                         //int z1;                                  // переменная для получения результата
-                        //z1 = Convertator.Chisla();               // переданное значение присваиваем в переменнуюю z
+                        //z1 = Convertator.Numbers();               // переданное значение присваиваем в переменнуюю z
                         //Console.WriteLine(z1.GetType());         // получение типа переменной
                         goto select;
                     case "5":
@@ -116,9 +116,9 @@ namespace ConsoleProgram
                         Console.WriteLine(new Conditional().Action());
                         goto select;
                     case "9":
-                        Console.WriteLine("_______________Получение данных из Construkcii.cs________________");
-                        Console.WriteLine(new Construkcii().Action());
-                        goto select;
+                        Console.WriteLine("_______________Получение данных из ConditionalConstructions.cs______");
+                        new ConditionalConstructions().Action();
+                    goto select;
                     case "10":
                         Console.WriteLine("_______________Получение данных из Cycles.cs_____________________");
                         Console.WriteLine(new Cycles().Action());

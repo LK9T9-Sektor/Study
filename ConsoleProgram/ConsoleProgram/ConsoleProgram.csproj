@@ -49,6 +49,7 @@
     <Compile Include="AccessModifiers.cs" />
     <Compile Include="Array.cs" />
     <Compile Include="Bunch.cs" />
+    <Compile Include="ConditionalConstructions.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Convertator.cs" />
     <Compile Include="Cycles.cs" />
@@ -73,6 +74,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FirstLibrary\FirstLibrary.csproj">
+      <Project>{9e710989-1711-43e3-a511-6ec6e49d0ed2}</Project>
+      <Name>FirstLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
