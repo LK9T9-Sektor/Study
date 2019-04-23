@@ -55,7 +55,12 @@ namespace ConsoleProgram
                 "23. Типы значений и ссылочные типы, стек(stek), куча(heap)\n" +
                 "24. Объекты классов как параметры методов\n" +
                 "25. Модификаторы доступа\n" +
-                "26. Свойства { get; set; } и инкапсуляция\n");
+                "26. Свойства { get; set; } и инкапсуляция\n" +
+                "27. Перегрузка методов\n" +
+                "28. Статические члены и модификатор static\n" +
+                "29. Константы и поля для чтения (readonly)\n" +
+                "30. Перегрузка операторов\n" +
+                "31. Оператор null-объединения (??), условный null (?)\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -189,6 +194,26 @@ namespace ConsoleProgram
                 case "26":
                     Console.WriteLine($"{ line } Properties_encapsulation { line }");
                     new Properties_encapsulation().Action();
+                    goto select;
+                case "27":
+                    Console.WriteLine($"{ line } Method_overloading { line }");
+                    new Method_overloading().Action();
+                    goto select;
+                case "28":
+                    Console.WriteLine($"{ line } Static_members_modifier { line }");
+                    new Static_members_modifier().Action();
+                    goto select;
+                case "29":
+                    Console.WriteLine($"{ line } Const_readonly { line }");
+                    new Const_readonly().Action();
+                    goto select;
+                case "30":
+                    Console.WriteLine($"{ line } OperatorsOverload { line }");
+                    new OperatorsOverload().Action();
+                    goto select;
+                case "31":
+                    Console.WriteLine($"{ line } NullOperator { line }");
+                    new NullOperator().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
