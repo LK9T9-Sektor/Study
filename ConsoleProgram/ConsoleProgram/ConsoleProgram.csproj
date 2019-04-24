@@ -55,6 +55,7 @@
     <Compile Include="Convertator.cs" />
     <Compile Include="Cycles.cs" />
     <Compile Include="Enumerable.cs" />
+    <Compile Include="Indexers.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="Implicit.cs" />
     <Compile Include="Method_overloading.cs" />

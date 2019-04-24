@@ -60,7 +60,8 @@ namespace ConsoleProgram
                 "28. Статические члены и модификатор static\n" +
                 "29. Константы и поля для чтения (readonly)\n" +
                 "30. Перегрузка операторов\n" +
-                "31. Оператор null-объединения (??), условный null (?)\n");
+                "31. Оператор null-объединения (??), условный null (?)\n" +
+                "32. Индексаторы\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -214,6 +215,10 @@ namespace ConsoleProgram
                 case "31":
                     Console.WriteLine($"{ line } NullOperator { line }");
                     new NullOperator().Action();
+                    goto select;
+                case "32":
+                    Console.WriteLine($"{ line } Indexers { line }");
+                    new Indexers().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
