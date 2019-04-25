@@ -61,7 +61,9 @@ namespace ConsoleProgram
                 "29. Константы и поля для чтения (readonly)\n" +
                 "30. Перегрузка операторов\n" +
                 "31. Оператор null-объединения (??), условный null (?)\n" +
-                "32. Индексаторы\n");
+                "32. Индексаторы\n" +
+                "33. Наследование, base\n" +
+                "34. Преобразование типов (объектов классов). Upcasting, downcasting. as, is\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -219,6 +221,14 @@ namespace ConsoleProgram
                 case "32":
                     Console.WriteLine($"{ line } Indexers { line }");
                     new Indexers().Action();
+                    goto select;
+                case "33":
+                    Console.WriteLine($"{ line } Inheritance { line }");
+                    new Inheritance().Action();
+                    goto select;
+                case "34":
+                    Console.WriteLine($"{ line } TypeConversion { line }");
+                    new TypeConversion().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
