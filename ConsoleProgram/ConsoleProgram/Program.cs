@@ -63,7 +63,8 @@ namespace ConsoleProgram
                 "31. Оператор null-объединения (??), условный null (?)\n" +
                 "32. Индексаторы\n" +
                 "33. Наследование, base\n" +
-                "34. Преобразование типов (объектов классов). Upcasting, downcasting. as, is\n");
+                "34. Преобразование типов (объектов классов). Upcasting, downcasting. as, is\n" +
+                "35. Перегрузка операций преобразования типов.  explicit, implicit\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -229,6 +230,10 @@ namespace ConsoleProgram
                 case "34":
                     Console.WriteLine($"{ line } TypeConversion { line }");
                     new TypeConversion().Action();
+                    goto select;
+                case "35":
+                    Console.WriteLine($"{ line } OverloadingTypeConversion { line }");
+                    new OverloadingTypeConversion().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");

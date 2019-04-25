@@ -81,6 +81,7 @@
     <Compile Include="Oop_classes_objects.cs" />
     <Compile Include="OperatorsOverload.cs" />
     <Compile Include="Overflow.cs" />
+    <Compile Include="OverloadingTypeConversion.cs" />
     <Compile Include="Parameters.cs" />
     <Compile Include="BitHandling.cs" />
     <Compile Include="Conversion.cs" />
