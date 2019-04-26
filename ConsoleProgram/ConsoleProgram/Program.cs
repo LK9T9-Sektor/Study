@@ -64,7 +64,8 @@ namespace ConsoleProgram
                 "32. Индексаторы\n" +
                 "33. Наследование, base\n" +
                 "34. Преобразование типов (объектов классов). Upcasting, downcasting. as, is\n" +
-                "35. Перегрузка операций преобразования типов.  explicit, implicit\n");
+                "35. Перегрузка операций преобразования типов.  explicit, implicit\n" +
+                "36. Полиморфизм. virtual, override sealed\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -234,6 +235,10 @@ namespace ConsoleProgram
                 case "35":
                     Console.WriteLine($"{ line } OverloadingTypeConversion { line }");
                     new OverloadingTypeConversion().Action();
+                    goto select;
+                case "36":
+                    Console.WriteLine($"{ line } Polymorphism_VirtualMethods { line }");
+                    new Polymorphism_VirtualMethods().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");

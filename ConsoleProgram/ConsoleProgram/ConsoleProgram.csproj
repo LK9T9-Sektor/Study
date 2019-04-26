@@ -62,40 +62,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessModifiers.cs" />
-    <Compile Include="Array.cs" />
-    <Compile Include="Bunch.cs" />
-    <Compile Include="ConditionalConstructions.cs" />
-    <Compile Include="Const_readonly.cs" />
-    <Compile Include="Context.cs" />
-    <Compile Include="Convertator.cs" />
-    <Compile Include="Cycles.cs" />
-    <Compile Include="Enumerable.cs" />
-    <Compile Include="Indexers.cs" />
-    <Compile Include="Inheritance.cs" />
-    <Compile Include="Methods.cs" />
-    <Compile Include="Implicit.cs" />
-    <Compile Include="Method_overloading.cs" />
-    <Compile Include="NullOperator.cs" />
-    <Compile Include="ObjectsLikeParameters.cs" />
-    <Compile Include="Oop_classes_objects.cs" />
-    <Compile Include="OperatorsOverload.cs" />
-    <Compile Include="Overflow.cs" />
-    <Compile Include="OverloadingTypeConversion.cs" />
-    <Compile Include="Parameters.cs" />
-    <Compile Include="BitHandling.cs" />
-    <Compile Include="Conversion.cs" />
-    <Compile Include="Assignment .cs" />
+    <Compile Include="OOP\AccessModifiers.cs" />
+    <Compile Include="Basics\Array.cs" />
+    <Compile Include="Basics\Bunch.cs" />
+    <Compile Include="Basics\ConditionalConstructions.cs" />
+    <Compile Include="OOP\Const_readonly.cs" />
+    <Compile Include="Basics\Context.cs" />
+    <Compile Include="Basics\Convertator.cs" />
+    <Compile Include="Basics\Cycles.cs" />
+    <Compile Include="Basics\Enumerable.cs" />
+    <Compile Include="OOP\Indexers.cs" />
+    <Compile Include="OOP\Inheritance.cs" />
+    <Compile Include="Basics\Methods.cs" />
+    <Compile Include="Basics\Implicit.cs" />
+    <Compile Include="OOP\Method_overloading.cs" />
+    <Compile Include="OOP\NullOperator.cs" />
+    <Compile Include="OOP\ObjectsLikeParameters.cs" />
+    <Compile Include="OOP\Oop_classes_objects.cs" />
+    <Compile Include="OOP\OperatorsOverload.cs" />
+    <Compile Include="Basics\Overflow.cs" />
+    <Compile Include="OOP\OverloadingTypeConversion.cs" />
+    <Compile Include="Basics\Parameters.cs" />
+    <Compile Include="Basics\BitHandling.cs" />
+    <Compile Include="Basics\Conversion.cs" />
+    <Compile Include="Basics\Assignment .cs" />
+    <Compile Include="OOP\Polymorphism_VirtualMethods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties_encapsulation.cs" />
-    <Compile Include="Recursion.cs" />
-    <Compile Include="Static_members_modifier.cs" />
-    <Compile Include="Structures.cs" />
-    <Compile Include="Tuples.cs" />
-    <Compile Include="TypeConversion.cs" />
-    <Compile Include="Types.cs" />
-    <Compile Include="Conditional.cs" />
+    <Compile Include="OOP\Properties_encapsulation.cs" />
+    <Compile Include="Basics\Recursion.cs" />
+    <Compile Include="OOP\Static_members_modifier.cs" />
+    <Compile Include="OOP\Structures.cs" />
+    <Compile Include="OOP\Tuples.cs" />
+    <Compile Include="OOP\TypeConversion.cs" />
+    <Compile Include="Basics\Types.cs" />
+    <Compile Include="Basics\Conditional.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -119,5 +120,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
