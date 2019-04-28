@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OOP\Abstract.cs" />
     <Compile Include="OOP\AccessModifiers.cs" />
     <Compile Include="Basics\Array.cs" />
     <Compile Include="Basics\Bunch.cs" />
@@ -71,12 +72,15 @@
     <Compile Include="Basics\Convertator.cs" />
     <Compile Include="Basics\Cycles.cs" />
     <Compile Include="Basics\Enumerable.cs" />
+    <Compile Include="OOP\Generics.cs" />
+    <Compile Include="OOP\Hiding.cs" />
     <Compile Include="OOP\Indexers.cs" />
     <Compile Include="OOP\Inheritance.cs" />
     <Compile Include="Basics\Methods.cs" />
     <Compile Include="Basics\Implicit.cs" />
     <Compile Include="OOP\Method_overloading.cs" />
     <Compile Include="OOP\NullOperator.cs" />
+    <Compile Include="OOP\ObjectClass.cs" />
     <Compile Include="OOP\ObjectsLikeParameters.cs" />
     <Compile Include="OOP\Oop_classes_objects.cs" />
     <Compile Include="OOP\OperatorsOverload.cs" />

@@ -65,7 +65,11 @@ namespace ConsoleProgram
                 "33. Наследование, base\n" +
                 "34. Преобразование типов (объектов классов). Upcasting, downcasting. as, is\n" +
                 "35. Перегрузка операций преобразования типов.  explicit, implicit\n" +
-                "36. Полиморфизм. virtual, override sealed\n");
+                "36. Полиморфизм. virtual, override sealed\n" +
+                "37. Сокрытие (new)\n" +
+                "38. Абстрактные классы и члены классов (abstract)\n" +
+                "39. Класс System.Object и его методы\n" +
+                "40. Универсальные шаблоны (generics)\n");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -239,6 +243,22 @@ namespace ConsoleProgram
                 case "36":
                     Console.WriteLine($"{ line } Polymorphism_VirtualMethods { line }");
                     new Polymorphism_VirtualMethods().Action();
+                    goto select;
+                case "37":
+                    Console.WriteLine($"{ line } Hiding { line }");
+                    new Hiding().Action();
+                    goto select;
+                case "38":
+                    Console.WriteLine($"{ line } Abstract { line }");
+                    new Abstract().Action();
+                    goto select;
+                case "39":
+                    Console.WriteLine($"{ line } ObjectClass { line }");
+                    new ObjectClass().Action();
+                    goto select;
+                case "40":
+                    Console.WriteLine($"{ line } Generics { line }");
+                    new Generics().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
