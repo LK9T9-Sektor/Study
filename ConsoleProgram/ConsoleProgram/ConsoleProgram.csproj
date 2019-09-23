@@ -72,6 +72,7 @@
     <Compile Include="Basics\Convertator.cs" />
     <Compile Include="Basics\Cycles.cs" />
     <Compile Include="Basics\Enumerable.cs" />
+    <Compile Include="OOP\GenericConstraints.cs" />
     <Compile Include="OOP\Generics.cs" />
     <Compile Include="OOP\Hiding.cs" />
     <Compile Include="OOP\Indexers.cs" />

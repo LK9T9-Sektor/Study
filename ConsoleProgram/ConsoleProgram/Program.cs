@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleProgram.OOP;
 
 //пространство имен ConsoleProgram
 namespace ConsoleProgram
@@ -69,7 +70,8 @@ namespace ConsoleProgram
                 "37. Сокрытие (new)\n" +
                 "38. Абстрактные классы и члены классов (abstract)\n" +
                 "39. Класс System.Object и его методы\n" +
-                "40. Универсальные шаблоны (generics)\n");
+                "40. Универсальные шаблоны (Обобщенные типы) (generics)\n" +
+                "41. Ограничения обобщений (Generics Constraints)");
             select:
             Console.WriteLine("_____________________________________________________________________");
             Console.Write("Выход из программы: 0. Отображения списка методов: ?\nВведите номер метода: ");
@@ -259,6 +261,10 @@ namespace ConsoleProgram
                 case "40":
                     Console.WriteLine($"{ line } Generics { line }");
                     new Generics().Action();
+                    goto select;
+                case "41":
+                    Console.WriteLine($"{ line } GenericsConstraints { line }");
+                    new GenericConstraints().Action();
                     goto select;
                 default:
                     Console.WriteLine("Неверный метод, попробуйте ещё раз!");
