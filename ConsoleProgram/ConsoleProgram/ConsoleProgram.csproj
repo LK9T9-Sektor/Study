@@ -62,6 +62,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExceptionHandling\ExceptionsConstruction.cs" />
+    <Compile Include="ExceptionHandling\ExceptionsFilters.cs" />
+    <Compile Include="ExceptionHandling\ExceptionsTypes.cs" />
     <Compile Include="OOP\Abstract.cs" />
     <Compile Include="OOP\AccessModifiers.cs" />
     <Compile Include="Basics\Array.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Basics\Enumerable.cs" />
     <Compile Include="OOP\GenericConstraints.cs" />
     <Compile Include="OOP\Generics.cs" />
+    <Compile Include="OOP\GenericsInheritance.cs" />
     <Compile Include="OOP\Hiding.cs" />
     <Compile Include="OOP\Indexers.cs" />
     <Compile Include="OOP\Inheritance.cs" />
@@ -98,10 +102,11 @@
     <Compile Include="Basics\Recursion.cs" />
     <Compile Include="OOP\Static_members_modifier.cs" />
     <Compile Include="OOP\Structures.cs" />
-    <Compile Include="OOP\Tuples.cs" />
+    <Compile Include="Basics\Tuples.cs" />
     <Compile Include="OOP\TypeConversion.cs" />
     <Compile Include="Basics\Types.cs" />
     <Compile Include="Basics\Conditional.cs" />
+    <Compile Include="SelectionMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
