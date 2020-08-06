@@ -67,7 +67,7 @@ namespace ConsoleProgram
         public void WorkWithLibrary()
         {            
             Users Alex = new Users();
-            Alex.city = "Krasnoyarsk";
+            Alex.City = "Krasnoyarsk";
             age = 30;
             name = "Alex";
             //salary = 30000; // недоступно, т.к. private
@@ -78,7 +78,7 @@ namespace ConsoleProgram
         public void DisplayInfo()
         {
             Users users = new Users();
-            Console.WriteLine($"Город: {city}, возраст: {age}, имя: {name}");
+            Console.WriteLine($"Город: {City}, возраст: {age}, имя: {name}");
         }
     }
 }
