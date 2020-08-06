@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FirstLibrary
 {
     // Классы определяемые в пространстве имён могут быть только public или internal
     public class Users
     {
-        public string city;
+        public string City;
         protected int age;  // доступен во всём проекте для текущего и наследуемых классов
         protected string name;
-        private int salary; // не будет доступа для классов наследников
-        internal int experience; // доступен только внутри данного проекта
+        private int _salary; // не будет доступа для классов наследников
+        internal int _experience; // доступен только внутри данного проекта
 
         // вложенный класс может быть с другими модификаторами доступа
         private class Admin
@@ -24,8 +20,8 @@ namespace FirstLibrary
 
         public void DisplayAllInfo()
         {
-            Console.WriteLine($"Город: {city}, возраст: {age}, имя: {name}, зарплата: {salary}, " +
-                $"опыт: {experience}");
+            Console.WriteLine($"Город: {City}, возраст: {age}, имя: {name}, зарплата: {_salary}, " +
+                $"опыт: {_experience}");
         }
     }
 }
